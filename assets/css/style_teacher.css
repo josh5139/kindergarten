@@ -1,0 +1,143 @@
+/* global.css - Keeping consistent styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Baloo 2', cursive;
+  color: #2c3e50;
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #e74c3c;
+}
+
+.active {
+  font-weight: bold;
+  color: #e67e22 !important;
+}
+
+/* style_teacher.css - Specific styles for the teacher dashboard */
+header {
+  background-color: #fff;
+  color: #2c3e50;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header nav a {
+  margin-left: 20px;
+  font-size: 1.1em;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+header nav a:hover {
+  background-color: #f0f0f0;
+}
+
+section {
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 960px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+section h2 {
+  color: #e67e22;
+  margin-bottom: 15px;
+  font-size: 2em;
+}
+
+section p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+section > div {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-left: 5px solid #3498db;
+}
+
+section > div h3 {
+  color: #3498db;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+section > div p {
+  color: #777;
+}
+
+section > div a {
+  display: inline-block;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+section > div a:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  header h1 {
+      margin-bottom: 10px;
+  }
+
+  header nav {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+  }
+
+  header nav a {
+      margin-left: 0;
+      margin-bottom: 10px;
+      border-radius: 0;
+      border-bottom: 1px solid #eee;
+      padding: 15px;
+  }
+
+  section {
+      padding: 20px;
+      margin: 15px;
+  }
+
+  section h2 {
+      font-size: 1.8em;
+  }
+}

@@ -1,0 +1,52 @@
+
+body {
+    background: #f0f5f9;
+}
+.dashboard {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2b6777;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.nav a {
+    flex: 1 1 30%;
+    text-align: center;
+    padding: 15px;
+    background: #2b6777;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.nav a:hover {
+    background: #1f4e5f;
+}
+
+.logout {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.logout a {
+    color: #e63946;
+    font-weight: bold;
+    text-decoration: none;
+}

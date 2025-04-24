@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+.about-header {
+  background-color: rgb(8, 4, 4);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.about-header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.about-main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.intro, .mission-vision, .features, .contact-note {
+  margin-bottom: 2.5rem;
+}
+
+h2, h3 {
+  color: #388e3c;
+}
+
+.mission-vision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.mission, .vision {
+  flex: 1;
+  min-width: 300px;
+  background-color: #f1f8e9;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  background-color: #e8f5e9;
+  margin: 0.5rem 0;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-size: 1.05rem;
+}
+
+.contact-note a {
+  color: #2e7d32;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.about-footer {
+  background-color: #e0e0e0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}

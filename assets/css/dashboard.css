@@ -1,0 +1,125 @@
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background: #f0f4f8; 
+    margin: 0;
+    padding: 0;
+    color: #37474f; 
+    min-height: 100vh;
+    
+  }
+  
+  .dashboard-header {
+    background-color:#1a1a1b; 
+    color: #fff;
+    box-shadow: 0 3px 7px #3a393926;
+  }
+  
+  .dashboard-header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+  
+  .dashboard-header nav ul {
+    list-style: none;
+    padding: 25px;
+    margin: 0;
+    display:flex;
+    gap: 20px;
+    padding-right:20px ;
+  }
+  
+  .dashboard-header nav ul li {
+    margin-left: 2px;
+  }
+  
+  .dashboard-header nav ul li:first-child {
+    margin-left: 0;
+  }
+  
+  .dashboard-header nav ul li a {
+    color: #e0f2f1; 
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0px,10px;
+    border-radius: 8px;
+    display:flex;
+    gap: 20px;
+   
+  }
+  
+  .dashboard-header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: scale(1.05);
+  }
+  
+  
+  .dashboard-main {
+    padding: 40px;
+    flex-grow: 1; 
+  }
+  
+  .overview-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Wider minimum width */
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .overview-boxes .box {
+    flex-direction: column;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    border-left: 5px solid #26a69a; 
+  }
+  
+  .overview-boxes .box:hover {
+    transform: translateY(-8px);
+  }
+  
+  .overview-boxes .box h3 {
+    color: #26a69a;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 2em;
+    font-weight: 700;
+  }
+  
+  .overview-boxes .box p {
+    font-size: 1.4em;
+    color: #546e7a;
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .dashboard-header nav ul {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .dashboard-header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+  
+    .overview-boxes {
+        grid-template-columns: 1fr;
+    }
+  }
+  
+  

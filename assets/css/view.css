@@ -1,0 +1,50 @@
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+h2 {
+    font-family: 'Baloo 2', cursive;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.document-list {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.document-item {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.document-item:last-child {
+    border-bottom: none;
+}
+
+.document-name {
+    font-weight: bold;
+    color: #3b3b3b;
+}
+
+.document-info {
+    font-size: 14px;
+    color: #666;
+}
+
+.document-download {
+    float: right;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.document-download:hover {
+    text-decoration: underline;
+}

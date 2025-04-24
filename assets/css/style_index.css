@@ -1,0 +1,339 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:#f0f4f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}                 
+    
+.container .h2 {
+  font-size: 20px;
+} 
+
+h1, h2, h3 {
+  color:white;
+}
+
+a {
+  color:white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background-color:black; 
+  padding: 0.9em 0;
+  border-bottom: 1px solid #eee;
+  position: sticky; /* Keeps the header at the top on scroll */
+  top: 0;
+  z-index: 100; /* Ensures it stays above other content */
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+}
+
+.nav-links {
+  display: flex;
+  font-size:25px;
+  padding: 20px;
+  gap: 25px;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+.nav-links li :hover {
+  color: #06b300;
+}
+.nav-links li:first-child {
+  margin-left: 0;
+}
+
+
+.hero {
+  background: linear-gradient(rgba(248, 215, 218, 0.3), rgba(255, 230, 141, 0.3)), url('./assets/imgs/hero_kindergarten.jpg') center/cover no-repeat;
+  color: #555; /* Darker text for better readability on the light background */
+  text-align: center;
+  padding: 120px 0; /* Slightly increased padding */
+  margin-bottom: 30px; /* Add some space below */
+}
+
+.hero .container {
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white container for text */
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero p {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #008000; /* A cheerful yellow */
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px; /* More rounded */
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #e0a800;
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Sections (Mission, Why Choose Us, etc.) */
+.mission, .why-choose-us, .features, .testimonials, .gallery, .contact, #enrollment-form {
+  padding: 50px 0; /* Increased padding for more visual space */
+  text-align: center;
+}
+.btn{
+  width:100px;
+  height:100px;
+}
+.mission .container,
+.why-choose-us .container,
+.testimonials .container,
+.contact .container,
+#enrollment-form {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white containers */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Space between sections */
+}
+
+.why-choose-us ul {
+  margin-top: 20px;
+  list-style-type: disc; /* Use bullet points for better readability */
+  padding-left: 20px;
+  text-align: left;
+}
+
+.why-choose-us li {
+  padding: 10px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.why-choose-us li:last-child {
+  border-bottom: none;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 30px; /* Increased padding */
+  border-radius: 12px; /* More rounded */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.card img {
+  max-width: 100px; /* Slightly larger icons */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  max-width: 700px; /* Wider testimonial area */
+  font-style: italic;
+  color: #777;
+  font-size: 1.1em;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Larger images */
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+#enrollment-form {
+  background-color: #f8f0e3; /* Consistent background */
+  padding: 60px 0;
+}
+
+#enrollForm {
+  max-width: 600px; /* Wider form */
+  margin: 30px auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#enrollForm div {
+  display: flex;
+  flex-direction: column;
+}
+
+#enrollForm label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 1.1em;
+}
+
+#enrollForm input[type="text"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+#enrollForm button[type="submit"] {
+  background-color: #008000;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+#enrollForm button[type="submit"]:hover {
+  background-color: #4cae4c;
+  transform: scale(1.02);
+}
+
+#formMessage {
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.contact .container {
+  text-align: center;
+}
+
+.contact p {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 0.5px 0;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+      padding: 15px;
+  }
+
+  header .container {
+      flex-direction: column;
+      align-items: center; /* Center align on smaller screens */
+  }
+
+  header nav {
+      margin-top: 15px;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      align-items: center; /* Center align nav links */
+  }
+
+  .nav-links li {
+      margin: 10px 0;
+  }
+
+  .hero {
+      padding: 100px 0;
+      margin-bottom: 20px;
+  }
+
+  .hero .container {
+      padding: 30px;
+  }
+
+  .hero h2 {
+      font-size: 2.8em;
+  }
+
+  .features-grid {
+      grid-template-columns: 1fr;
+  }
+
+  #enrollForm {
+      padding: 30px;
+  }
+}
